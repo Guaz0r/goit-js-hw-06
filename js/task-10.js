@@ -5,8 +5,8 @@
   }
 
 
-  const START_SIZE = 19;
-  const NEXT_UP = 7;
+  const START_SIZE = 30;
+  const NEXT_UP = 10;
 
   const divBox = document.querySelector('#boxes');
   const btnCreate = document.querySelector('[data-create]');
