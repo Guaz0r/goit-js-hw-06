@@ -28,6 +28,11 @@ button {
   | Task - 3
   |============================
 */
+.gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .gallery {
   display: flex;
@@ -37,10 +42,4 @@ button {
 
 .gallery li {
   margin: 5px;
-}
-
-.gallery img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }

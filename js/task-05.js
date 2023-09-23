@@ -1,12 +1,7 @@
-const nameInput = document.querySelector('#name-input');
-const nameOutput = document.querySelector('#name-output');
+const input = document.getElementById('name-input');
+  const output = document.getElementById('name-output');
 
-nameInput.addEventListener('input', () => {
-  const inputValue = nameInput.value.trim();  // видалення зайвих пробілів 
-
-  if (inputValue !== '') {
-    nameOutput.textContent = inputValue;
-  } else {
-    nameOutput.textContent = 'Anonymous';
-  }
-});
+  input.addEventListener('input', (event) => {
+    const inputValue = event.target.value.trim(); // прибираємо зайві пробіли
+    output.textContent = inputValue !== '' ? inputValue : 'Anonymous';
+  });
